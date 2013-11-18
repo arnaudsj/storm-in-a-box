@@ -1,0 +1,12 @@
+[submodule "cookbooks/users"]
+	path = cookbooks/users
+	url = git@github.com:opscode-cookbooks/users.git
+[submodule "cookbooks/chef-solo-search"]
+	path = cookbooks/chef-solo-search
+	url = git@github.com:edelight/chef-solo-search.git
+[submodule "cookbooks/apt"]
+	path = cookbooks/apt
+	url = git@github.com:opscode-cookbooks/apt.git
+[submodule "cookbooks/java"]
+	path = cookbooks/java
+	url = git@github.com:opscode-cookbooks/java.git
