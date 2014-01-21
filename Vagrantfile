@@ -15,9 +15,12 @@ def create_swap(swap_size_mb, swap_file = "/swapfile1")
   EOS
 end
 
+Vagrant.require_plugin "vagrant-berkshelf"
+Vagrant.require_plugin "vagrant-omnibus"
+
 
 Vagrant.configure("2") do |config|
-  
+
   config.vm.define :storm do |storm|
     storm.vm.box = "precise64"
     storm.vm.host_name = "storm"
