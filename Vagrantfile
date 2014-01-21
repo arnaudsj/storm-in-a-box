@@ -49,6 +49,8 @@ Vagrant.configure("2") do |config|
       # chef.add_recipe "users::sysadmin_sudo" # adds %sysadmin group to sudoers
       chef.add_recipe "java"
       chef.add_recipe "storm::singlenode"
+      chef.add_recipe "python"
+
 
       chef.json = {
         :java => {

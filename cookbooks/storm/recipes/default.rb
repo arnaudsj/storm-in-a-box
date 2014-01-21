@@ -69,7 +69,7 @@ bash "Storm install" do
   cwd "/home/#{node[:storm][:deploy][:user]}"
   code <<-EOH
   mkdir mnt-storm || true
-  wget https://dl.dropbox.com/u/133901206/storm-#{node[:storm][:version]}.zip
+  wget https://dl.dropboxusercontent.com/s/dj86w8ojecgsam7/storm-#{node[:storm][:version]}.zip
   unzip storm-#{node[:storm][:version]}.zip
   cd storm-#{node[:storm][:version]}
   EOH
